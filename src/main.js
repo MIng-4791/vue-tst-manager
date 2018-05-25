@@ -3,13 +3,21 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import store from '@/store/index'
+import Element from 'element-ui'
+import '@/assets/styles/style.scss'
 
 Vue.config.productionTip = false
+Vue.prototype.axios = axios
+Vue.use(Element, {size: 'small'})
+
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
