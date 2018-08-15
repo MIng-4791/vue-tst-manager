@@ -2,7 +2,7 @@ import Vue from 'vue'
 import 'babel-polyfill'
 import Router from 'vue-router'
 import home from '@/components/common/home'
-
+import xtgl from '@/components/service/system/zzjggl.vue'
 
 Vue.use(Router)
 
@@ -12,7 +12,186 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component: home
+      component: home,
+      meta: {title: '系统首页'},
+      children: [
+        {
+          path: '/home/system',
+          name: 'xtgl',
+          meta: {title: '系统管理'},
+          component: xtgl,
+          children: [
+            {
+              path: '/home/system/zzjggl',
+              name: 'zzjggl',
+              meta: {title: '组织机构管理'},
+              component: xtgl,
+            },
+            {
+              path: '/home/system/yhgl',
+              name: 'yhgl',
+              meta: {title: '用户管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/system/aqdgl',
+              name: 'aqdgl',
+              meta: {title: '安全岛管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/system/ipgl',
+              name: 'ipgl',
+              meta: {title: 'IP段管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/system/zyxlgl',
+              name: 'zyxlgl',
+              meta: {title: '资源线路管理'},
+              component: xtgl
+            },
+          ]
+        },
+        {
+          path: '/home/activities',
+          name: 'hdgl',
+          meta: {title: '活动管理'},
+          component: xtgl,
+          children: [
+            {
+              path: '/home/activities/tjztgl',
+              name: 'tjztgl',
+              meta: {title: '推荐主题管理'},
+              component: xtgl,
+            },
+            {
+              path: '/home/activities/bzhdgl',
+              name: 'bzhdgl',
+              meta: {title: '班组活动管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/bzhdap',
+              name: 'bzhdap',
+              meta: {title: '班组活动安排'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/bzhdxq',
+              name: 'bzhdxq',
+              meta: {title: '班组活动详情'},
+              component: xtgl
+            }
+          ]
+        },
+        {
+          path: '/home/resource',
+          name: 'zygl',
+          meta: {title: '资源管理'},
+          component: xtgl,
+          children: [
+            {
+              path: '/home/activities/mlgl',
+              name: 'mlgl',
+              meta: {title: '目录管理'},
+              component: xtgl,
+            },
+            {
+              path: '/home/activities/kjgl',
+              name: 'kjgl',
+              meta: {title: '课件管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/qykj',
+              name: 'qykj',
+              meta: {title: '企业课件'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/shjg',
+              name: 'shjg',
+              meta: {title: '审核结果'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/ggtk',
+              name: 'ggtk',
+              meta: {title: '公共题库'},
+              component: xtgl,
+            },
+            {
+              path: '/home/activities/hyfl',
+              name: 'hyfl',
+              meta: {title: '行业分类管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/sgyb',
+              name: 'sgyb',
+              meta: {title: '事故月报'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/jhml',
+              name: 'jhml',
+              meta: {title: '交互目录管理'},
+              component: xtgl
+            },
+            {
+              path: '/home/activities/jhkj',
+              name: 'jhkj',
+              meta: {title: '交互课件管理'},
+              component: xtgl
+            }
+          ]
+        },
+        {
+          path: '/home/feedback',
+          name: 'yjfk',
+          meta: {title: '意见反馈'},
+          component: xtgl,
+        },
+        {
+          path: '/home/statistics',
+          name: 'tjfx',
+          meta: {title: '统计分析'},
+          component: xtgl,
+          children: [
+            {
+              path: '/home/system/aqdztjk',
+              name: 'aqdztjk',
+              meta: {title: '安全岛状态监控'},
+              component: xtgl,
+            },
+            {
+              path: '/home/system/kjsyqk',
+              name: 'kjsyqk',
+              meta: {title: '课件使用情况分析'},
+              component: xtgl
+            },
+            {
+              path: '/home/system/jftj',
+              name: 'jftj',
+              meta: {title: '积分统计'},
+              component: xtgl
+            }
+          ]
+        },
+        {
+          path: '/home/help',
+          name: 'help',
+          meta: {title: '帮助'},
+          component: xtgl,
+        },
+        {
+          path: '/home/updatelog',
+          name: 'gxrz',
+          meta: {title: '更新日志'},
+          component: xtgl,
+        },
+      ],
     },
     {
       path: '/',

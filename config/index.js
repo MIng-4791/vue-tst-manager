@@ -10,7 +10,18 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/tst-api': {
+        // 测试环境
+        target: 'http://10.206.1.248:8089',  // 80接口
+        changeOrigin: true,  //是否跨域
+      },
+      '/file': {
+        // 测试环境
+        target: 'http://10.206.1.248',  // 接口域名
+        changeOrigin: true,  //是否跨域
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

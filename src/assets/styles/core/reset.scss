@@ -14,7 +14,7 @@
 ::before,
 ::after {
     @include box-sizing(border-box);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 // 1. 默认禁止body滚动

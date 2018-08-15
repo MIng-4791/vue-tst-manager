@@ -1,0 +1,26 @@
+// color
+$bg_color: #409CFF;
+$bg_hover: rgb(64, 180, 255);
+$white: #fff;
+$black: #000;
+$gray666: #666;
+$black_percent10: rgba(0, 0, 0, .1);
+$light_red: #f56c6c;
+
+// 百分比
+$percent100: 100%;
+$percent90: 90%;
+$percent80: 80%;
+$percent70: 70%;
+$percent60: 60%;
+$percent50: 50%;
+$percent40: 40%;
+$percent30: 30%;
+$percent20: 20%;
+$percent10: 10%;
+
+// 设置宽度和高度
+@mixin wh($wh) {
+  width: $wh;
+  height: $wh;
+}
