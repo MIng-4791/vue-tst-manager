@@ -44,7 +44,10 @@ export default {
 
   },
   mounted() {
-    this.$router.options.routes[0].children.forEach((key, index) => {
+    let menulist = this.$router.options.routes[0].children.filter((item) => {
+      return item.name != 'main'
+    })
+    menulist.forEach((key, index) => {
       let obj;
       if (key.children) {
         obj = {

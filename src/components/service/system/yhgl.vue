@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="zzjggl">
-    zzjggl
+  <div class="yjgl">
+    yjgl
   </div>
 </template>
 

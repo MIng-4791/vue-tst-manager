@@ -2,9 +2,16 @@
 @import "./header.scss";
 @import "./sidebar.scss";
 @import "./tags.scss";
+@import "./main.scss";
+@import "../service/system/xtgl.scss";
+@import "../service/system/aqdgl.scss";
+@import "../service/system/ipgl.scss";
+@import "../service/system/yhgl.scss";
+@import "../service/system/zyxlgl.scss";
+@import "../service/system/zzjggl.scss";
 
 .header{
-  color: #fff;
+  color: $white;
   .logo{
     // background-image: url('./img/logo-big.png');
   }
