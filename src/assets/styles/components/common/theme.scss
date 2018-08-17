@@ -24,3 +24,16 @@ $percent10: 10%;
   width: $wh;
   height: $wh;
 }
+
+// sidebar菜单的图标
+@mixin imgBase($img) {
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../../static/images/components/common/#{$img}.png');
+}
+@mixin flex($w, $h) {
+  display: flex;
+  justify-content: $w;
+  align-items: $h;
+}

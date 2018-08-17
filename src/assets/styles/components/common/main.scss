@@ -1,4 +1,15 @@
 .main{
-  @include wh($percent100);
-  color: $black;
+  .kj-wrap{
+    width: $percent100;
+    height: $percent50;
+    @include flex('space-between', 'center');
+    .zxtjzt{
+      height: $percent100;
+      width: 33.3333333%;
+    }
+    .zxkj{
+      height: $percent100;
+      width: 66.6666666%;
+    }
+  }
 }

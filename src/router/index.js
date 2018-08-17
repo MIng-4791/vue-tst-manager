@@ -2,12 +2,25 @@ import Vue from 'vue'
 import 'babel-polyfill'
 import Router from 'vue-router'
 import home from '@/components/common/home'
+import xtgl from '@/components/service/system/xtgl.vue'
 import aqdgl from '@/components/service/system/aqdgl.vue'
 import ipgl from '@/components/service/system/ipgl.vue'
 import yhgl from '@/components/service/system/yhgl.vue'
 import zyxlgl from '@/components/service/system/zyxlgl.vue'
 import zzjggl from '@/components/service/system/zzjggl.vue'
-import xtgl from '@/components/service/system/xtgl.vue'
+
+import hdgl from '@/components/service/activities/hdgl.vue'
+
+import yjfk from '@/components/service/feedback/yjfk.vue'
+
+import bz from '@/components/service/help/bz.vue'
+
+import zygl from '@/components/service/resource/zygl.vue'
+
+import tjfx from '@/components/service/statistic/tjfx.vue'
+
+import gxrz from '@/components/service/updatelog/gxrz.vue'
+
 import xtgl1 from '@/components/service/system/zzjggl.vue'
 
 Vue.use(Router)
@@ -63,7 +76,7 @@ export default new Router({
           path: '/home/activities',
           name: 'hdgl',
           meta: {title: '活动管理'},
-          component: xtgl1,
+          component: hdgl,
           children: [
             {
               path: '/home/activities/tjztgl',
@@ -95,7 +108,7 @@ export default new Router({
           path: '/home/resource',
           name: 'zygl',
           meta: {title: '资源管理'},
-          component: xtgl1,
+          component: zygl,
           children: [
             {
               path: '/home/activities/mlgl',
@@ -157,13 +170,13 @@ export default new Router({
           path: '/home/feedback',
           name: 'yjfk',
           meta: {title: '意见反馈'},
-          component: xtgl1,
+          component: yjfk,
         },
         {
           path: '/home/statistics',
           name: 'tjfx',
           meta: {title: '统计分析'},
-          component: xtgl1,
+          component: yjfk,
           children: [
             {
               path: '/home/system/aqdztjk',
@@ -189,13 +202,13 @@ export default new Router({
           path: '/home/help',
           name: 'help',
           meta: {title: '帮助'},
-          component: xtgl1,
+          component: bz,
         },
         {
           path: '/home/updatelog',
           name: 'gxrz',
           meta: {title: '更新日志'},
-          component: xtgl1,
+          component: gxrz,
         },
       ],
     },

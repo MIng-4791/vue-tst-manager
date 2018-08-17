@@ -31,6 +31,12 @@
       background-color: $bg_color;
     }
   }
+  .my_icon{
+    display: inline-block;
+    width: .18rem;
+    height: .18rem;
+    margin-right: .05rem;
+  }
 }
 
 .el-menu-item,
@@ -41,4 +47,33 @@
 
 .el-submenu .el-menu-item {
   min-width: 1.99rem !important;
+}
+.el-menu--vertical{
+  background-color: $bg_color;
+  ul{
+    background-color: $bg_color;
+
+  }
+}
+
+.xtgl_icon{
+  @include imgBase('xtgl');
+}
+.hdgl_icon{
+  @include imgBase('hdgl');
+}
+.zygl_icon{
+  @include imgBase('zygl');
+}
+.yjfk_icon{
+  @include imgBase('yjfk');
+}
+.tjfx_icon{
+  @include imgBase('tjfx');
+}
+.bz_icon{
+  @include imgBase('bz');
+}
+.gxrz_icon{
+  @include imgBase('gxrz');
 }

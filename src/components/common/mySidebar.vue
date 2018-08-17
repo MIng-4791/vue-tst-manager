@@ -5,7 +5,7 @@
         <template v-if="item.subs">
           <el-submenu :index="item.index" :key="item.index">
             <template slot="title">
-              <i :class="item.icon"></i><span slot="title">{{ item.title }}</span>
+              <i class="my_icon" :class="item.icon"></i><span slot="title">{{ item.title }}</span>
             </template>
             <el-menu-item v-for="(subItem,i) in item.subs" :key="i" :index="subItem.index" :disabled="my_route">
               {{ subItem.title }}
@@ -14,7 +14,7 @@
         </template>
         <template v-else>
           <el-menu-item :index="item.index" :key="item.index" :disabled="my_route">
-            <i :class="item.icon"></i><span slot="title">{{ item.title }}</span>
+            <i class="my_icon" :class="item.icon"></i><span slot="title">{{ item.title }}</span>
           </el-menu-item>
         </template>
       </template>
@@ -29,13 +29,13 @@ export default {
     return {
       collapse: true,
       icons: [
-        'el-icon-setting',
-        'el-icon-tickets',
-        'el-icon-message',
-        'el-icon-date',
-        'el-icon-star-on',
-        'el-icon-question',
-        'el-icon-warning'
+        'xtgl_icon',
+        'hdgl_icon',
+        'zygl_icon',
+        'yjfk_icon',
+        'tjfx_icon',
+        'bz_icon',
+        'gxrz_icon'
       ],
       items: []
     }

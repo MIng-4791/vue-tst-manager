@@ -10,9 +10,29 @@
 @import "../service/system/zyxlgl.scss";
 @import "../service/system/zzjggl.scss";
 
-.header{
+.header {
   color: $white;
-  .logo{
-    // background-image: url('./img/logo-big.png');
-  }
+
+  .logo {}
+}
+
+
+
+.aqdgl,
+.bz,
+.gxrz,
+.hdgl,
+.ipgl,
+.main,
+.tjfx,
+.xtgl,
+.yhgl,
+.yjfk,
+.zygl,
+.zyxlgl,
+.zzjggl {
+  @include wh($percent100);
+  color: $black;
+  box-sizing: border-box;
+  padding: .05rem;
 }
